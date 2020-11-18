@@ -1,0 +1,382 @@
+/* font */
+body,
+p,
+span {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+/* dif icon */
+
+/* begin css */
+.main-menu .container-fluid,
+.banner-section .container-fluid {
+  max-width: 1486px;
+}
+img {
+  max-width: 100%;
+}
+.mbs {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.bg-2 {
+  background: #f9fafb;
+}
+/* menu */
+ul.my-header-menu {
+}
+ul.my-header-menu li {
+}
+ul.my-header-menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #111111;
+  font-weight: 500;
+}
+ul.my-header-menu li a span {
+  font-size: 16px;
+  margin-left: 3px;
+}
+ul.my-header-menu li a:hover {
+  color: #e83b3e;
+  transition: 0.6s;
+}
+/* Dropdown Menu */
+ul.my-header-menu li {
+  position: relative;
+  list-style: none;
+}
+ul.my-header-menu li ul {
+  position: absolute;
+  width: 250px;
+  /* height: 750px; */
+  left: 0;
+  top: 140%;
+  background: #fff;
+  padding: 12px 12px 12px 12px;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+}
+ul.my-header-menu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  top: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+ul.my-header-menu li ul li {
+}
+ul.my-header-menu li ul li a:hover {
+  letter-spacing: 1px;
+}
+
+/*header icon + */
+.header-info {
+}
+.header-search {
+  width: 60px;
+  font-size: 22px;
+  margin-right: 20px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+.header-call {
+  width: 220px;
+}
+.header-call-icon {
+  font-size: 30px;
+  color: #e83b3e;
+}
+.btn-primary {
+  background: #e83b3e !important;
+  color: #ffffff;
+  border-color: #e83b3e;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 500;
+
+  position: relative;
+  z-index: 1;
+}
+.btn-primary::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
+  z-index: -1;
+}
+.btn-primary:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* Banear Section */
+.banner-section {
+  background: url("img/main-banner2.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.baner-item h6 {
+  color: #e83b3e;
+  font-weight: 400;
+  font-size: 19px;
+}
+.baner-item h1 {
+  font-size: 65px;
+  line-height: 73px;
+}
+.baner-item p {
+  line-height: 30px;
+  font-size: 17px;
+  color: #606060;
+}
+.socal-menu-header {
+  position: absolute;
+  bottom: 0px;
+}
+.socal-menu-header ul {
+  list-style: none;
+}
+.socal-menu-header ul li a {
+  color: #111111;
+}
+.socal-menu-header ul li a:hover {
+  color: #e83b3e;
+  transition: 0.4s;
+  display: inline-block;
+}
+.socal-menu-header ul li span {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+}
+.socal-menu-header ul li span::after {
+  content: "";
+  height: 1px;
+  background: #111;
+  width: 50px;
+  position: absolute;
+  right: ;
+  top: 13px;
+  right: -61px;
+}
+/* part 2 */
+/* About Saction*/
+.about-section {
+  padding: 150px 0 150px 0;
+}
+.about-img {
+  position: relative;
+}
+.about-img-text {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  background: url(img/shape.png) no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img-text h2 {
+  font-size: 70px;
+  margin-bottom: 5px;
+  color: #e83b3e;
+  line-height: 1;
+}
+.about-img-text p {
+  font-weight: 600;
+  font-size: 16.5px;
+  margin-right: -6px;
+}
+
+.about-text h6 {
+  color: #e83b3e;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 19px;
+}
+.about-text h2 {
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 0.1px;
+  color: #111;
+}
+.about-text p {
+  font-size: 17px;
+  color: #606060;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.about-text strong {
+  font-size: 18px;
+  color: #606060;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.about-text ul {
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+.about-text ul li {
+  margin-bottom: 10px;
+  color: #606060;
+  font-weight: 400;
+}
+.about-text ul li::before {
+  content: "\f104";
+  font-family: "Flaticon";
+  font-weight: 800;
+  display: inline-block;
+  margin-right: 10px;
+  color: #e83b3e;
+}
+
+/* part 3 */
+.why-chiss-us {
+  padding: 130px 0;
+}
+.icon-div {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 40px 15px 25px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.icon-div:hover {
+  transform: translateY(-20px);
+  transition: 0.6s;
+}
+.icon-div::before {
+  position: absolute;
+  content: "";
+  background: #fdebeb;
+  top: -150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 93%;
+  height: 75%;
+  border-radius: 50%;
+  /* z-index: 0; */
+}
+.icon-div:hover .icon {
+  color: #fff;
+  background: #e83b3e;
+  transition: 1.2s;
+}
+.icon {
+  background: #fff;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-radius: 50%;
+  font-size: 41px;
+  color: #e83b3e;
+  position: relative;
+}
+.icon-div h2 {
+  font-weight: 500;
+}
+.icon-div p {
+}
+/* Icon Before */
+.flaticon-speed:before {
+  content: "\f101";
+  font-size: 60px;
+  margin: auto;
+}
+.flaticon-user-experience:before {
+  content: "\f100";
+  font-size: 60px;
+  margin: auto;
+}
+.flaticon-guarantee:before {
+  content: "\f102";
+  font-size: 60px;
+  margin: auto;
+}
+.flaticon-reliability:before {
+  content: "\f103";
+  font-size: 60px;
+  margin: auto;
+  line-height: 100px;
+}
+.why-chiss-me {
+  position: relative;
+}
+.why-chis-btn {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  line-height: 90px;
+  color: #e83b3e;
+  font-size: 63px;
+  border-radius: 50%;
+  position: absolute;
+  right: 269px;
+  /* left: 0; */
+  bottom: 53px;
+}
+.why-chis-btn::before {
+  content: "";
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e83b3e;
+  border-radius: 50%;
+  line-height: 90%;
+  animation: play-btn 1.5s ease-out infinite;
+}
+@keyframes play-btn {
+  0%,
+  30% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+.why-chis-btn:hover {
+  color: #fff;
+  background: #e83b3e;
+  transition: 0.6s;
+}
